@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Restaurante Cacahuazintle</string>
+    <string name="saludo">Hola buen dia! Me gustaria encargar:</string>
+    <string name="infor">En el restaurante Pozolería y Antojitos Cacahuazintle ofrecemos platillos de comida tradicional mexicana con sabores y aromas auténticos, creados con cuidado y cariño. La experiencia culinaria que ofrecemos es única y no se puede encontrar en otro lugar.</string>
+    <string name="logo_del_restaurante">Logo del restaurante</string>
+    <string name="boton_flotante">boton flotante</string>
+    <string name="suc1TXT">Suc. 1: Zaragoza #213 Zona Centro, Calvillo Ags.</string>
+    <string name="suc2TXT">Suc. 2:Blvd. Rodolfo Landeros #150, Calvillo, Ags.</string>
+    <string name="suc3TXT">Suc. 3: Av. Aguascalientes Sur #436 Local 9-A, Col. España, Ags.</string>
+    <string name="nuestras_sucursales">Nuestras Sucursales</string>
+    <string name="llamar">LLAMAR</string>
+    <string name="num1">4959561635</string>
+    <string name="num2">4959567228</string>
+    <string name="num3">4493206501</string>
+    <string name="pozole">POZOLE</string>
+    <string name="pozoleResumen">El tradicional pozole hecho a base de granos de maíz nixtamalizados, al que se agregan carnes de pollo o puerco, verduras y especias muy variadas.</string>
+    <string name="foto_pozole">Foto Pozole</string>
+    <string name="mx_120_00">MX $120.00</string>
+    <string name="rojo">Rojo</string>
+    <string name="verde">Verde</string>
+    <string name="cantidadTxt">1</string>
+    <string name="rabanostxt">Rabanos +$10.00</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="salsa_picante">Salsa Picante</string>
+    <string name="repollo">Repollo</string>
+    <string name="extras">Extras</string>
+    <string name="grande">Grande</string>
+    <string name="mediano">Mediano</string>
+    <string name="chico">Chico</string>
+    <string name="tama_o">Tamaño</string>
+    <string name="personalizar">Personalizar</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="encargar">ENCARGAR</string>
+    <string name="ordenTxt">Hola buen dia! Me gustaria encargar </string>
+    <string name="ordenTxt2"> pozole(s) como el siguiente por favor! </string>
+    <string name="precio2">MX $130.00</string>
+</resources>

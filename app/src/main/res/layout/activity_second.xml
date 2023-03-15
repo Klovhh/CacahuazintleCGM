@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="-239dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/pozoleIMG"
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:contentDescription="@string/foto_pozole"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pozrojo" />
+
+            <TextView
+                android:id="@+id/pozoleTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:shadowColor="#939393"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/pozole"
+                android:textColor="#252525"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pozoleIMG" />
+
+            <TextView
+                android:id="@+id/resumenLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/pozoleResumen"
+                android:textColor="#595959"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pozoleTXT"
+                tools:ignore="VisualLintLongText" />
+
+
+            <TextView
+                android:id="@+id/precioLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/mx_120_00"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resumenLbl" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="388dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#000000"
+                android:backgroundTint="#000000"
+                android:fadingEdge="horizontal|vertical"
+                android:foregroundTint="#000000"
+                android:outlineAmbientShadowColor="@color/black"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/precioLbl"
+                tools:ignore="UnusedAttribute"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/personalizarLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/personalizar"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+            <RadioGroup
+                android:id="@+id/radioColor"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.542"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioButton
+                    android:id="@+id/rojoBtn"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/rojo"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:onClick="cambiarFoto2"/>
+
+                <RadioButton
+                    android:id="@+id/verdeBtn"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verde"
+                    android:textSize="15sp"
+                    android:onClick="cambiarFoto"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tamanoLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/tama_o"
+                android:textColor="#191919"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioColor" />
+
+            <RadioGroup
+                android:id="@+id/radioTamano"
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                <RadioButton
+                    android:id="@+id/chicoBtn"
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/chico"
+                    android:textSize="15sp"
+                    android:onClick="cambiarPrecioLabel"/>
+
+                <RadioButton
+                    android:id="@+id/medianoBtn"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mediano"
+                    android:textSize="15sp"
+                    android:onClick="cambiarPrecioLabel2"/>
+
+                <RadioButton
+                    android:id="@+id/grandeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/grande"
+                    android:textSize="15sp"
+                    tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck"
+                    android:onClick="cambiarPrecioLabel3"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/extrasLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/extras"
+                android:textColor="#0B0B0B"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioTamano">
+
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/repolloCheck"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:checked="true"
+                android:text="@string/repollo" />
+
+            <CheckBox
+                android:id="@+id/rabanosCheck"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/rabanostxt"
+                tools:ignore="VisualLintButtonSize"
+                android:onClick="cambiarPrecio"/>
+
+            <CheckBox
+                android:id="@+id/cebollaCheck"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:text="@string/cebolla" />
+
+            <CheckBox
+                android:id="@+id/salsaCheck"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:text="@string/salsa_picante" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/encargarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="sendMessage"
+        android:text="@string/encargar"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/cantidadLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cantidad"
+        android:textColor="#3E3E3E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cantidadEditT"
+        app:layout_constraintEnd_toStartOf="@+id/cantidadEditT" />
+
+    <EditText
+        android:id="@+id/cantidadEditT"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="@string/cantidadTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/encargarBtn"
+        tools:ignore="Autofill,LabelFor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
